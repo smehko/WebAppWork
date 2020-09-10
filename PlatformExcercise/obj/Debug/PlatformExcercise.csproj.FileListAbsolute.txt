@@ -54,3 +54,5 @@ C:\Users\Miha\source\repos\PlatformExcercise\PlatformExcercise\obj\Debug\Platfor
 C:\Users\Miha\source\repos\PlatformExcercise\PlatformExcercise\obj\Debug\PlatformExcercise.csproj.CopyComplete
 C:\Users\Miha\source\repos\PlatformExcercise\PlatformExcercise\obj\Debug\PlatformExcercise.dll
 C:\Users\Miha\source\repos\PlatformExcercise\PlatformExcercise\obj\Debug\PlatformExcercise.pdb
+C:\Users\Miha\source\repos\PlatformExcercise\PlatformExcercise\bin\Dapper.dll
+C:\Users\Miha\source\repos\PlatformExcercise\PlatformExcercise\bin\Dapper.xml
