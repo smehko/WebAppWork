@@ -127,6 +127,7 @@
     <Compile Include="Data\DataAccess.cs" />
     <Compile Include="Data\DataRepository.cs" />
     <Compile Include="Data\ServicesDataRepository.cs" />
+    <Compile Include="Dtos\OpombaDto.cs" />
     <Compile Include="Dtos\ProduktOpombaDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using PlatformExcercise.Data;
 using PlatformExcercise.Dtos;
+using PlatformExcercise.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -20,6 +21,29 @@ namespace PlatformExcercise.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult CreateOpomba(OpombaDto dto)
+        {
+            var model = new OpombaModel
+            {
+                Id = dto.Id,
+                Opomba = dto.Opomba
+            };
+
+            List<OpombaModel> getOpombaById = DataRepository.LoadOpombaById(model);
+            if (getOpombaById.Count > 0)
+            {
+                DataRepository.UpdateOpomba(model);
+            }
+            else 
+            {
+                DataRepository.CreateOpomba(model);
+            }
+
+            string message = "SUCCESS";
+            return Json(new { Message = message, JsonRequestBehavior.AllowGet });
         }
 
         public JsonResult GetProdukti()
